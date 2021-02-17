@@ -4,6 +4,7 @@ services:
     image: "${REPO}/lakefs:${TAG}"
     ports:
       - "8000:8000"
+      - "8081:8081"
     depends_on:
       - "postgres"
     environment:
